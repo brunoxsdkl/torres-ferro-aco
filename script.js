@@ -21,3 +21,34 @@ function closeCampaignModal(){
 document.querySelector('.campaign-modal-close')?.addEventListener('click',closeCampaignModal);
 campaignModal?.addEventListener('click',e=>{if(e.target===campaignModal)closeCampaignModal()});
 document.addEventListener('keydown',e=>{if(e.key==='Escape')closeCampaignModal()});
+
+// Newsletter temporária: valida e registra o e-mail no navegador.
+// Depois este mesmo formulário pode ser ligado a Brevo/Mailchimp/Resend.
+const newsletterForm = document.getElementById('newsletterForm');
+const newsletterEmail = document.getElementById('newsletterEmail');
+const newsletterStatus = document.getElementById('newsletterStatus');
+
+newsletterForm?.addEventListener('submit', (event) => {
+  event.preventDefault();
+  const email = newsletterEmail?.value.trim() || '';
+
+  if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+    if (newsletterStatus) {
+      newsletterStatus.textContent = 'Digite um e-mail válido para continuar.';
+      newsletterStatus.className = 'newsletter-status error';
+    }
+    newsletterEmail?.focus();
+    return;
+  }
+
+  const key = 'torresNewsletterCadastros';
+  const current = JSON.parse(localStorage.getItem(key) || '[]');
+  if (!current.includes(email)) current.push(email);
+  localStorage.setItem(key, JSON.stringify(current));
+
+  if (newsletterStatus) {
+    newsletterStatus.textContent = 'Cadastro realizado! Em breve conectaremos este formulário ao envio de novidades.';
+    newsletterStatus.className = 'newsletter-status success';
+  }
+  newsletterForm.reset();
+});
