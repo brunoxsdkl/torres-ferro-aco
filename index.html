@@ -20,6 +20,7 @@
       <nav class="navlinks">
         <a href="#empresa">Empresa</a>
         <a href="#produtos">Produtos</a>
+        <a href="#campanhas">Destaques</a>
         <a href="#servicos">Serviços</a>
         <a href="#diferenciais">Diferenciais</a>
         <a class="nav-cta" href="#contato">Solicitar orçamento</a>
@@ -47,8 +48,8 @@
         </div>
         <div class="hero-visual reveal">
           <div class="hero-card">
-            <div class="hero-card-tag">TORRES • FERRO & AÇO</div>
-            <img src="/assets/mascote.webp" alt="Mascote industrial Torres Ferro e Aço" />
+            <div class="hero-card-tag">TORRES • SOLUÇÕES EM FERRO E AÇO</div>
+            <img src="/assets/campanhas/09_projeto.webp" alt="Seu projeto sai do papel com a Torres" />
           </div>
           <div class="floating-card card-a"><b>5% OFF</b><small>no PIX à vista</small></div>
           <div class="floating-card card-b"><b>3x sem juros</b><small>no cartão</small></div>
@@ -87,6 +88,57 @@
     <div><span>04</span><b>Projetos sob medida</b></div>
   </div>
 </section>
+
+<section class="campaigns section" id="campanhas">
+  <div class="container">
+    <div class="campaigns-head reveal">
+      <div>
+        <span class="eyebrow dark">DESTAQUES TORRES</span>
+        <h2>Conheça nossas <mark>soluções em destaque.</mark></h2>
+      </div>
+      <div class="campaigns-copy">
+        <p>Produtos, serviços, condições comerciais e atendimento para quem constrói, fabrica e transforma.</p>
+        <div class="campaign-nav" aria-label="Navegação das campanhas">
+          <button class="campaign-arrow prev" type="button" aria-label="Anterior">←</button>
+          <button class="campaign-arrow next" type="button" aria-label="Próxima">→</button>
+        </div>
+      </div>
+    </div>
+    <div class="campaign-track" id="campaignTrack">
+      <button class="campaign-card reveal" type="button" data-campaign="/assets/campanhas/01_corte_dobra.webp"><img src="/assets/campanhas/01_corte_dobra.webp" alt="Corte e dobra de precisão Torres" loading="lazy"><span>Corte e dobra</span></button>
+      <button class="campaign-card reveal" type="button" data-campaign="/assets/campanhas/04_telhas.webp"><img src="/assets/campanhas/04_telhas.webp" alt="Telhas e coberturas Torres" loading="lazy"><span>Telhas e coberturas</span></button>
+      <button class="campaign-card reveal" type="button" data-campaign="/assets/campanhas/05_chapa_cartola.webp"><img src="/assets/campanhas/05_chapa_cartola.webp" alt="Chapa cartola sob medida Torres" loading="lazy"><span>Chapa cartola</span></button>
+      <button class="campaign-card reveal" type="button" data-campaign="/assets/campanhas/10_corrimao.webp"><img src="/assets/campanhas/10_corrimao.webp" alt="Suporte de corrimão Torres" loading="lazy"><span>Suporte de corrimão</span></button>
+      <button class="campaign-card reveal" type="button" data-campaign="/assets/campanhas/03_produtos.webp"><img src="/assets/campanhas/03_produtos.webp" alt="Tudo o que sua obra precisa Torres" loading="lazy"><span>Linha de produtos</span></button>
+      <button class="campaign-card reveal" type="button" data-campaign="/assets/campanhas/07_serralherias.webp"><img src="/assets/campanhas/07_serralherias.webp" alt="Ideal para serralherias e obras Torres" loading="lazy"><span>Serralherias e obras</span></button>
+      <button class="campaign-card reveal" type="button" data-campaign="/assets/campanhas/08_condicoes.webp"><img src="/assets/campanhas/08_condicoes.webp" alt="Condições especiais Torres" loading="lazy"><span>Condições especiais</span></button>
+      <button class="campaign-card reveal" type="button" data-campaign="/assets/campanhas/02_atendimento.webp"><img src="/assets/campanhas/02_atendimento.webp" alt="Atendimento rápido e eficiente Torres" loading="lazy"><span>Atendimento e entrega</span></button>
+      <button class="campaign-card reveal" type="button" data-campaign="/assets/campanhas/06_institucional.webp"><img src="/assets/campanhas/06_institucional.webp" alt="Tudo em ferro e aço para sua obra Torres" loading="lazy"><span>Ferro e aço</span></button>
+      <button class="campaign-card reveal" type="button" data-campaign="/assets/campanhas/09_projeto.webp"><img src="/assets/campanhas/09_projeto.webp" alt="Seu projeto sai do papel com a Torres" loading="lazy"><span>Seu projeto</span></button>
+    </div>
+  </div>
+</section>
+
+<section class="commercial-showcase">
+  <div class="commercial-image reveal"><img src="/assets/campanhas/08_condicoes.webp" alt="Condições especiais Torres Ferro e Aço" loading="lazy"></div>
+  <div class="commercial-copy reveal">
+    <span class="eyebrow">CONDIÇÕES COMERCIAIS</span>
+    <h2>Mais facilidade para <em>tirar seu projeto do papel.</em></h2>
+    <p>Condições para facilitar sua compra, com atendimento direto e soluções para obras, serralherias e empresas.</p>
+    <div class="commercial-points">
+      <div><strong>5% OFF</strong><span>PIX à vista</span></div>
+      <div><strong>3x</strong><span>sem juros no cartão</span></div>
+      <div><strong>18x</strong><span>com juros</span></div>
+    </div>
+    <a class="btn black" href="#contato">Solicitar orçamento</a>
+  </div>
+</section>
+
+<div class="campaign-modal" id="campaignModal" aria-hidden="true">
+  <button class="campaign-modal-close" type="button" aria-label="Fechar">×</button>
+  <div class="campaign-modal-inner"><img id="campaignModalImage" src="" alt="Campanha Torres Ferro e Aço"></div>
+</div>
+
 <section class="section products" id="produtos">
       <div class="container">
         <div class="section-heading reveal">
@@ -104,7 +156,7 @@
     </section>
 
     <section class="feature-banner">
-      <div class="feature-media"><img src="/assets/telhas.webp" alt="Telhas e coberturas Torres" /></div>
+      <div class="feature-media"><img src="/assets/campanhas/04_telhas.webp" alt="Telhas e coberturas Torres" /></div>
       <div class="feature-copy reveal">
         <span class="eyebrow">DESTAQUE</span>
         <h2>Telhas e coberturas com qualidade para durar.</h2>
@@ -121,15 +173,15 @@
         </div>
         <div class="service-grid">
           <article class="service-card reveal">
-            <img src="/assets/corte-dobra.webp" alt="Corte e dobra de precisão" />
+            <img src="/assets/campanhas/01_corte_dobra.webp" alt="Corte e dobra de precisão" />
             <div><small>SERVIÇO 01</small><h3>Corte e dobra de precisão</h3><p>Soluções sob medida com precisão e acabamento profissional.</p></div>
           </article>
           <article class="service-card reveal">
-            <img src="/assets/chapa-cartola.webp" alt="Chapa cartola sob medida" />
+            <img src="/assets/campanhas/05_chapa_cartola.webp" alt="Chapa cartola sob medida" />
             <div><small>SERVIÇO 02</small><h3>Chapa cartola sob medida</h3><p>Você informa as medidas e recebe o perfil pronto para instalação.</p></div>
           </article>
           <article class="service-card reveal">
-            <img src="/assets/corrimao.webp" alt="Suporte de corrimão" />
+            <img src="/assets/campanhas/10_corrimao.webp" alt="Suporte de corrimão" />
             <div><small>PRODUTO 03</small><h3>Suporte de corrimão</h3><p>Ideal para serralherias e obras, com opção para pedidos em volume.</p></div>
           </article>
         </div>
