@@ -66,10 +66,12 @@ document.querySelectorAll('.hero-banner-mobile, .hero-banner-desktop').forEach(t
     return;
   }
   if (slides.length === 1) {
+    const hero = track.closest('.hero');
     let shown = true;
     setInterval(() => {
       shown = !shown;
       slides[0].classList.toggle('is-active', shown);
+      if (hero) hero.classList.toggle('telha-overlay', shown);
     }, 5000);
   }
 });
