@@ -1433,32 +1433,40 @@ footer{background:#0c0e0c;color:#d9ddd9;padding:60px 0 25px}.footer-grid{display
 }
 
 /* ===== Banner mobile: versão celular (vertical) ===== */
+.hero-banner-mobile{
+  display:none;
+}
+
 @media(max-width:900px){
   .hero.hero-industrial{
     min-height:0 !important;
     padding-top:82px !important;
     padding-bottom:0 !important;
     background-color:#050605 !important;
-    background-image:url('assets/hero-banner-torres-mobile.webp') !important;
-    background-repeat:no-repeat !important;
-    background-position:center top !important;
-    background-size:100% auto !important;
+    background-image:none !important;
   }
+
   .hero.hero-industrial:before,
   .hero.hero-industrial:after,
   .hero.hero-industrial .hero-grid,
-  .hero.hero-industrial .hero-photo{
+  .hero.hero-industrial .hero-photo,
+  .hero.hero-industrial .hero-inner{
     display:none !important;
   }
-  .hero.hero-industrial .hero-inner{
-    width:100% !important;
-    max-width:none !important;
-    min-height:0 !important;
-    aspect-ratio:941/1672 !important;
+
+  .hero-banner-mobile{
     display:block !important;
-    position:relative;
-    padding:0 !important;
+    width:100% !important;
+    line-height:0;
   }
+
+  .hero-banner-mobile img{
+    display:block !important;
+    width:100% !important;
+    height:auto !important;
+    object-fit:contain !important;
+  }
+
   .hero.hero-industrial .hero-copy,
   .hero.hero-industrial .hero-copy > .eyebrow,
   .hero.hero-industrial .hero-copy > h1,
@@ -1471,7 +1479,20 @@ footer{background:#0c0e0c;color:#d9ddd9;padding:60px 0 25px}.footer-grid{display
   }
 }
 
-/* ===== Correção: mascote preso dentro da área preta da newsletter ===== */
+@media(max-width:560px){
+  .hero.hero-industrial{
+    padding-top:70px !important;
+  }
+}
+
+/* ===== Banner desktop: mantém o background (nunca aplica o mobile) ===== */
+@media(min-width:901px){
+  .hero-banner-mobile{
+    display:none !important;
+  }
+}
+
+/* ===== Correção: mascote/* ===== Correção: mascote preso dentro da área preta da newsletter ===== */
 .newsletter-mascot{
   overflow:hidden !important;
   isolation:isolate;
