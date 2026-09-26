@@ -828,40 +828,28 @@ footer{background:#0c0e0c;color:#d9ddd9;padding:60px 0 25px}.footer-grid{display
   right:22px;
   bottom:22px;
   z-index:120;
-  display:flex;
-  align-items:center;
-  gap:10px;
-  min-height:56px;
-  padding:10px 16px 10px 10px;
-  border-radius:999px;
-  background:#25D366;
-  color:#fff;
-  box-shadow:0 12px 30px rgba(0,0,0,.28);
-  font-size:13px;
-  font-weight:900;
-  letter-spacing:.4px;
-  transition:transform .2s ease, box-shadow .2s ease, filter .2s ease;
+  display:block;
+  width:62px;
+  height:62px;
+  border-radius:50%;
+  background:transparent;
+  box-shadow:0 8px 22px rgba(0,0,0,.28);
+  transition:box-shadow .2s ease;
+  animation:whatsappPulse 2s ease-in-out infinite;
+}
+.whatsapp-float img{
+  display:block;
+  width:100%;
+  height:100%;
+  object-fit:contain;
+  border-radius:50%;
 }
 .whatsapp-float:hover{
-  transform:translateY(-3px);
-  box-shadow:0 16px 34px rgba(0,0,0,.34);
-  filter:brightness(1.04);
+  box-shadow:0 14px 30px rgba(0,0,0,.34);
 }
-.whatsapp-icon{
-  width:38px;
-  height:38px;
-  border-radius:50%;
-  background:#fff;
-  color:#25D366;
-  display:inline-flex;
-  align-items:center;
-  justify-content:center;
-  font-size:23px;
-  line-height:1;
-  font-weight:900;
-}
-.whatsapp-label{
-  white-space:nowrap;
+@keyframes whatsappPulse{
+  0%,100%{ transform:scale(1); }
+  50%{ transform:scale(1.08); }
 }
 
 @media(max-width:560px){
@@ -870,16 +858,6 @@ footer{background:#0c0e0c;color:#d9ddd9;padding:60px 0 25px}.footer-grid{display
     bottom:14px;
     width:56px;
     height:56px;
-    min-height:56px;
-    padding:9px;
-    justify-content:center;
-  }
-  .whatsapp-label{
-    display:none;
-  }
-  .whatsapp-icon{
-    width:38px;
-    height:38px;
   }
 }
 
@@ -1097,25 +1075,6 @@ footer{background:#0c0e0c;color:#d9ddd9;padding:60px 0 25px}.footer-grid{display
   height:44px;
   display:block;
   object-fit:cover;
-}
-.whatsapp-icon{
-  background:#fff;
-  overflow:hidden;
-  line-height:1;
-}
-.whatsapp-icon img{
-  width:52px;
-  height:52px;
-  display:block;
-  object-fit:cover;
-  margin:-7px;
-}
-@media(max-width:560px){
-  .whatsapp-icon img{
-    width:50px;
-    height:50px;
-    margin:-6px;
-  }
 }
 
 /* ===== Banner promocional/* ===== Banner promocional com mascote acima do rodapé ===== */
