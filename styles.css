@@ -1075,7 +1075,43 @@ footer{background:#0c0e0c;color:#d9ddd9;padding:60px 0 25px}.footer-grid{display
   }
 }
 
-/* ===== Banner promocional com mascote acima do rodapé ===== */
+/* ===== Ícones WhatsApp (logo real) ===== */
+.utility-icon.whatsapp-mini{
+  background:transparent;
+  overflow:hidden;
+}
+.utility-icon.whatsapp-mini img{
+  width:32px;
+  height:32px;
+  display:block;
+  object-fit:contain;
+  margin:-6px -6px;
+  transform:none;
+}
+.footer-social a img{
+  width:24px;
+  height:24px;
+  display:block;
+  object-fit:contain;
+}
+.whatsapp-icon{
+  background:#fff;
+  overflow:hidden;
+}
+.whatsapp-icon img{
+  width:48px;
+  height:48px;
+  display:block;
+  object-fit:contain;
+}
+@media(max-width:560px){
+  .whatsapp-icon img{
+    width:46px;
+    height:46px;
+  }
+}
+
+/* ===== Banner promocional/* ===== Banner promocional com mascote acima do rodapé ===== */
 .promo-newsletter-banner{
   width:100%;
   background:#f8d400;
