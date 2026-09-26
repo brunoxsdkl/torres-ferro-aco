@@ -614,6 +614,11 @@ footer{background:#0c0e0c;color:#d9ddd9;padding:60px 0 25px}.footer-grid{display
   font-weight:900;
   font-size:12px;
 }
+.utility-icon svg{
+  display:block;
+  width:16px;
+  height:16px;
+}
 .utility-pin{
   font-size:10px;
   color:#0b0c0b;
