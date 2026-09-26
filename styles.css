@@ -1555,3 +1555,33 @@ footer{background:#0c0e0c;color:#d9ddd9;padding:60px 0 25px}.footer-grid{display
     position:relative;
   }
 }
+
+/* ===== Banner desktop: crossfade suave ===== */
+.hero-banner-desktop{
+  display:none;
+}
+@media(min-width:901px){
+  .hero-banner-desktop{
+    display:block !important;
+    position:absolute;
+    inset:0;
+    z-index:0;
+    overflow:hidden;
+  }
+  .hero-banner-desktop img{
+    position:absolute !important;
+    inset:0 !important;
+    width:100% !important;
+    height:100% !important;
+    object-fit:cover !important;
+    opacity:0;
+    transition:opacity 1.2s ease-in-out;
+  }
+  .hero-banner-desktop img.is-active{
+    opacity:1;
+  }
+  /* anula o background único do hero para não duplicar o slide 1 */
+  .hero.hero-industrial{
+    background:none !important;
+  }
+}
