@@ -1075,39 +1075,46 @@ footer{background:#0c0e0c;color:#d9ddd9;padding:60px 0 25px}.footer-grid{display
   }
 }
 
-/* ===== Ícones WhatsApp (logo real) ===== */
+/* ===== Ícones WhatsApp ===== */
 .utility-icon.whatsapp-mini{
-  background:transparent;
+  background:#0b0c0b;
   overflow:hidden;
+  padding:0;
 }
 .utility-icon.whatsapp-mini img{
   width:32px;
   height:32px;
   display:block;
-  object-fit:contain;
+  object-fit:cover;
   margin:-6px -6px;
-  transform:none;
+}
+.footer-social a{
+  overflow:hidden;
+  padding:0;
 }
 .footer-social a img{
-  width:24px;
-  height:24px;
+  width:44px;
+  height:44px;
   display:block;
-  object-fit:contain;
+  object-fit:cover;
 }
 .whatsapp-icon{
   background:#fff;
   overflow:hidden;
+  line-height:1;
 }
 .whatsapp-icon img{
-  width:48px;
-  height:48px;
+  width:52px;
+  height:52px;
   display:block;
-  object-fit:contain;
+  object-fit:cover;
+  margin:-7px;
 }
 @media(max-width:560px){
   .whatsapp-icon img{
-    width:46px;
-    height:46px;
+    width:50px;
+    height:50px;
+    margin:-6px;
   }
 }
 
@@ -1476,7 +1483,7 @@ footer{background:#0c0e0c;color:#d9ddd9;padding:60px 0 25px}.footer-grid{display
 @media(max-width:900px){
   .hero.hero-industrial{
     min-height:0 !important;
-    padding-top:62px !important;
+    padding-top:104px !important;
     padding-bottom:0 !important;
     background-color:#050605 !important;
     background-image:none !important;
@@ -1517,7 +1524,7 @@ footer{background:#0c0e0c;color:#d9ddd9;padding:60px 0 25px}.footer-grid{display
 
 @media(max-width:560px){
   .hero.hero-industrial{
-    padding-top:50px !important;
+    padding-top:104px !important;
   }
 }
 
