@@ -1565,8 +1565,9 @@ footer{background:#0c0e0c;color:#d9ddd9;padding:60px 0 25px}.footer-grid{display
     display:block !important;
     position:absolute;
     inset:0;
-    z-index:0;
+    z-index:1;
     overflow:hidden;
+    pointer-events:none;
   }
   .hero-banner-desktop img{
     position:absolute !important;
@@ -1579,9 +1580,5 @@ footer{background:#0c0e0c;color:#d9ddd9;padding:60px 0 25px}.footer-grid{display
   }
   .hero-banner-desktop img.is-active{
     opacity:1;
-  }
-  /* anula o background único do hero para não duplicar o slide 1 */
-  .hero.hero-industrial{
-    background:none !important;
   }
 }

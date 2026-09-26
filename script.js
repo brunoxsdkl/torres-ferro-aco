@@ -53,15 +53,24 @@ newsletterForm?.addEventListener('submit', (event) => {
   newsletterForm.reset();
 });
 
-// Banner crossfade: alterna slides de cada carrossel (5s)
+// Banner: crossfade entre slides (mobile 2+) e pulse sobre o 1o banner (desktop 1 slide)
 document.querySelectorAll('.hero-banner-mobile, .hero-banner-desktop').forEach(track => {
   const slides = track.querySelectorAll('.hero-banner-slide');
-  if (slides.length < 2) return;
-  let slideIndex = 0;
-  setInterval(() => {
-    slides[slideIndex].classList.remove('is-active');
-    slideIndex = (slideIndex + 1) % slides.length;
-    slides[slideIndex].classList.add('is-active');
-  }, 5000);
+  if (slides.length >= 2) {
+    let slideIndex = 0;
+    setInterval(() => {
+      slides[slideIndex].classList.remove('is-active');
+      slideIndex = (slideIndex + 1) % slides.length;
+      slides[slideIndex].classList.add('is-active');
+    }, 5000);
+    return;
+  }
+  if (slides.length === 1) {
+    let shown = true;
+    setInterval(() => {
+      shown = !shown;
+      slides[0].classList.toggle('is-active', shown);
+    }, 5000);
+  }
 });
 
