@@ -1432,6 +1432,45 @@ footer{background:#0c0e0c;color:#d9ddd9;padding:60px 0 25px}.footer-grid{display
   }
 }
 
+/* ===== Banner mobile: versão celular (vertical) ===== */
+@media(max-width:900px){
+  .hero.hero-industrial{
+    min-height:0 !important;
+    padding-top:82px !important;
+    padding-bottom:0 !important;
+    background-color:#050605 !important;
+    background-image:url('assets/hero-banner-torres-mobile.webp') !important;
+    background-repeat:no-repeat !important;
+    background-position:center top !important;
+    background-size:100% auto !important;
+  }
+  .hero.hero-industrial:before,
+  .hero.hero-industrial:after,
+  .hero.hero-industrial .hero-grid,
+  .hero.hero-industrial .hero-photo{
+    display:none !important;
+  }
+  .hero.hero-industrial .hero-inner{
+    width:100% !important;
+    max-width:none !important;
+    min-height:0 !important;
+    aspect-ratio:941/1672 !important;
+    display:block !important;
+    position:relative;
+    padding:0 !important;
+  }
+  .hero.hero-industrial .hero-copy,
+  .hero.hero-industrial .hero-copy > .eyebrow,
+  .hero.hero-industrial .hero-copy > h1,
+  .hero.hero-industrial .hero-copy > p,
+  .hero.hero-industrial .hero-chips,
+  .hero.hero-industrial .hero-visual,
+  .hero.hero-industrial .hero-actions,
+  .hero.hero-industrial .ticker{
+    display:none !important;
+  }
+}
+
 /* ===== Correção: mascote preso dentro da área preta da newsletter ===== */
 .newsletter-mascot{
   overflow:hidden !important;
