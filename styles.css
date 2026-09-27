@@ -829,38 +829,31 @@ footer{background:#0c0e0c;color:#d9ddd9;padding:60px 0 25px}.footer-grid{display
 /* ===== Botão flutuante WhatsApp ===== */
 .whatsapp-float{
   position:fixed;
-  right:22px;
-  bottom:22px;
+  right:10px;
+  bottom:8px;
   z-index:120;
   display:block;
-  width:62px;
-  height:62px;
-  border-radius:50%;
-  background:transparent;
-  box-shadow:0 8px 22px rgba(0,0,0,.28);
-  transition:box-shadow .2s ease;
-  animation:whatsappPulse 2s ease-in-out infinite;
+  width:116px;
+  height:174px;
+  transition:transform .25s ease;
 }
 .whatsapp-float img{
   display:block;
   width:100%;
   height:100%;
-  object-fit:cover;
+  object-fit:contain;
+  filter:drop-shadow(0 8px 12px rgba(0,0,0,.24));
 }
 .whatsapp-float:hover{
-  box-shadow:0 14px 30px rgba(0,0,0,.34);
-}
-@keyframes whatsappPulse{
-  0%,100%{ transform:scale(1); }
-  50%{ transform:scale(1.08); }
+  transform:translateY(-5px);
 }
 
 @media(max-width:560px){
   .whatsapp-float{
-    right:14px;
-    bottom:14px;
-    width:56px;
-    height:56px;
+    right:6px;
+    bottom:8px;
+    width:84px;
+    height:126px;
   }
 }
 
