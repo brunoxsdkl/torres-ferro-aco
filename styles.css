@@ -1722,3 +1722,63 @@ footer{background:#0c0e0c;color:#d9ddd9;padding:60px 0 25px}.footer-grid{display
 @media(prefers-reduced-motion:reduce){
   .solution-card,.solution-card img{transition:none !important}
 }
+
+/* Orçamento rápido, aberto apenas quando o cliente pede. */
+.quote-card-action,
+.product-card [data-quote-product]{
+  border:0;
+  background:none;
+  padding:0;
+  color:#947d00;
+  font:800 12px/1.4 Inter,sans-serif;
+  text-align:left;
+  cursor:pointer;
+}
+.quote-card-action{margin-top:20px}
+.product-card [data-quote-product]{margin-top:auto;color:var(--y)}
+.quote-card-action:hover,
+.product-card [data-quote-product]:hover{text-decoration:underline;text-underline-offset:4px}
+.solutions-action button{
+  display:inline-flex;
+  align-items:center;
+  gap:20px;
+  border:0;
+  background:#111;
+  color:var(--y);
+  padding:15px 20px;
+  border-radius:8px;
+  font:800 13px Inter,sans-serif;
+  cursor:pointer;
+}
+.solutions-action button:hover{background:#2a2a22}
+button.btn{border:0;cursor:pointer;font-family:Inter,sans-serif}
+.quote-dialog{
+  width:min(510px,calc(100% - 32px));
+  max-height:min(90dvh,760px);
+  padding:30px;
+  border:1px solid #deded4;
+  border-radius:18px;
+  box-shadow:0 28px 90px rgba(0,0,0,.35);
+  color:#171a16;
+  background:#fff;
+  overflow-y:auto;
+}
+.quote-dialog::backdrop{background:rgba(3,5,3,.72);backdrop-filter:blur(5px)}
+.quote-dialog-head{display:flex;align-items:flex-start;justify-content:space-between;gap:20px}
+.quote-kicker{color:#877200;font:800 10px Inter,sans-serif;letter-spacing:1.6px}
+.quote-dialog h2{font:900 40px/1 Barlow Condensed,sans-serif;text-transform:uppercase;margin:10px 0 8px}
+.quote-dialog-head p{font-size:13px;line-height:1.55;color:#646a63;margin:0 0 24px}
+.quote-close{flex:0 0 36px;width:36px;height:36px;border:0;border-radius:50%;background:#f2f2eb;font:26px/1 Arial,sans-serif;cursor:pointer}
+.quote-form{display:grid;gap:16px}
+.quote-form label{display:grid;gap:7px;font-size:12px;font-weight:800}
+.quote-form input,.quote-form select{width:100%;min-height:48px;padding:12px;border:1px solid #d7dbd4;border-radius:8px;background:#fafaf7;color:#171a16;font:500 14px Inter,sans-serif}
+.quote-form input:focus,.quote-form select:focus{outline:2px solid var(--y);outline-offset:1px}
+.quote-fields{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.quote-submit{display:flex;align-items:center;justify-content:center;gap:16px;min-height:52px;margin-top:4px;border:0;border-radius:8px;background:var(--y);color:#10110e;font:800 14px Inter,sans-serif;cursor:pointer}
+.quote-submit:hover{background:#ffe535}
+.quote-hint{margin:-6px 0 0;color:#747a73;text-align:center;font-size:11px}
+@media(max-width:560px){
+  .quote-dialog{padding:23px 18px;border-radius:14px}
+  .quote-dialog h2{font-size:35px}
+  .quote-fields{grid-template-columns:1fr;gap:16px}
+}

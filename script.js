@@ -53,3 +53,38 @@ document.querySelectorAll('.hero-banner-mobile, .hero-banner-desktop').forEach(t
   }
 });
 
+// Orçamento rápido: pré-preenche o produto escolhido e deixa o envio sob controle do cliente.
+const quoteDialog = document.getElementById('quoteDialog');
+const quoteForm = document.getElementById('quoteForm');
+const quoteProduct = document.getElementById('quoteProduct');
+
+document.querySelectorAll('[data-quote-product]').forEach(button => {
+  button.addEventListener('click', () => {
+    quoteForm.reset();
+    quoteProduct.value = button.dataset.quoteProduct || '';
+    quoteDialog.showModal();
+    (quoteProduct.value ? quoteForm.elements.measurements : quoteProduct).focus();
+  });
+});
+
+document.querySelector('[data-quote-close]')?.addEventListener('click', () => quoteDialog.close());
+quoteDialog?.addEventListener('click', event => {
+  if (event.target === quoteDialog) quoteDialog.close();
+});
+
+quoteForm?.addEventListener('submit', event => {
+  event.preventDefault();
+  if (!quoteForm.reportValidity()) return;
+
+  const data = new FormData(quoteForm);
+  const lines = [
+    'Olá, Torres! Gostaria de solicitar um orçamento.',
+    '',
+    `Material/serviço: ${data.get('product').trim()}`,
+    data.get('measurements').trim() && `Medidas: ${data.get('measurements').trim()}`,
+    `Quantidade: ${data.get('quantity').trim()}`,
+    data.get('location').trim() && `Bairro/cidade: ${data.get('location').trim()}`,
+  ].filter(Boolean);
+  const url = `https://wa.me/5541995414120?text=${encodeURIComponent(lines.join('\n'))}`;
+  window.open(url, '_blank', 'noopener');
+});

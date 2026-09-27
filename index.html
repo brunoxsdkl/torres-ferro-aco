@@ -135,18 +135,18 @@
     <div class="solutions-grid">
       <article class="solution-card reveal">
         <img src="assets/solution-telhas.webp" alt="Telhas de aço empilhadas" loading="lazy">
-        <div><span>01 / FABRICAÇÃO</span><h3>Telhas e coberturas</h3><p>Telhas de aço feitas para sua cobertura, com resistência e bom acabamento.</p></div>
+        <div><span>01 / FABRICAÇÃO</span><h3>Telhas e coberturas</h3><p>Telhas de aço feitas para sua cobertura, com resistência e bom acabamento.</p><button class="quote-card-action" type="button" data-quote-product="Telhas e coberturas">Pedir orçamento <span aria-hidden="true">→</span></button></div>
       </article>
       <article class="solution-card reveal">
         <img src="assets/solution-corte-dobra.webp" alt="Máquina dobrando uma peça de aço" loading="lazy">
-        <div><span>02 / SERVIÇO</span><h3>Corte e dobra</h3><p>Peças preparadas nas medidas do seu projeto, com precisão e agilidade.</p></div>
+        <div><span>02 / SERVIÇO</span><h3>Corte e dobra</h3><p>Peças preparadas nas medidas do seu projeto, com precisão e agilidade.</p><button class="quote-card-action" type="button" data-quote-product="Corte e dobra">Pedir orçamento <span aria-hidden="true">→</span></button></div>
       </article>
       <article class="solution-card reveal">
         <img src="assets/solution-chapa-cartola.webp" alt="Perfis metálicos chapa cartola" loading="lazy">
-        <div><span>03 / SOB MEDIDA</span><h3>Chapa cartola</h3><p>Perfis sob medida, prontos para facilitar a instalação na sua obra.</p></div>
+        <div><span>03 / SOB MEDIDA</span><h3>Chapa cartola</h3><p>Perfis sob medida, prontos para facilitar a instalação na sua obra.</p><button class="quote-card-action" type="button" data-quote-product="Chapa cartola">Pedir orçamento <span aria-hidden="true">→</span></button></div>
       </article>
     </div>
-    <div class="solutions-action reveal"><span>Tem um projeto em mente?</span><a href="#contato">Solicitar orçamento <span aria-hidden="true">→</span></a></div>
+    <div class="solutions-action reveal"><span>Tem um projeto em mente?</span><button type="button" data-quote-product="">Solicitar orçamento <span aria-hidden="true">→</span></button></div>
   </div>
 </section>
 
@@ -173,11 +173,11 @@
           <p>Uma seleção ampla para construção, fabricação, manutenção e projetos sob medida.</p>
         </div>
         <div class="product-grid">
-          <article class="product-card reveal"><span>01</span><h3>Telhas e coberturas</h3><p>Resistência, durabilidade e ótimo acabamento para diferentes aplicações.</p><a href="#contato">Solicitar cotação →</a></article>
-          <article class="product-card reveal"><span>02</span><h3>Tubos e barras</h3><p>Opções para estruturas, serralheria, fabricação e uso geral.</p><a href="#contato">Solicitar cotação →</a></article>
-          <article class="product-card reveal"><span>03</span><h3>Cantoneiras e vigas</h3><p>Perfis para projetos estruturais, reforços e soluções profissionais.</p><a href="#contato">Solicitar cotação →</a></article>
-          <article class="product-card reveal"><span>04</span><h3>Chapas e perfis</h3><p>Materiais versáteis para fabricação, acabamento e projetos personalizados.</p><a href="#contato">Solicitar cotação →</a></article>
-          <article class="product-card reveal"><span>05</span><h3>Suporte de corrimão</h3><p>Peças para serralherias e obras, com opção para pedidos em volume.</p><a href="#contato">Solicitar cotação →</a></article>
+          <article class="product-card reveal"><span>01</span><h3>Telhas e coberturas</h3><p>Resistência, durabilidade e ótimo acabamento para diferentes aplicações.</p><button type="button" data-quote-product="Telhas e coberturas">Solicitar cotação →</button></article>
+          <article class="product-card reveal"><span>02</span><h3>Tubos e barras</h3><p>Opções para estruturas, serralheria, fabricação e uso geral.</p><button type="button" data-quote-product="Tubos e barras">Solicitar cotação →</button></article>
+          <article class="product-card reveal"><span>03</span><h3>Cantoneiras e vigas</h3><p>Perfis para projetos estruturais, reforços e soluções profissionais.</p><button type="button" data-quote-product="Cantoneiras e vigas">Solicitar cotação →</button></article>
+          <article class="product-card reveal"><span>04</span><h3>Chapas e perfis</h3><p>Materiais versáteis para fabricação, acabamento e projetos personalizados.</p><button type="button" data-quote-product="Chapas e perfis">Solicitar cotação →</button></article>
+          <article class="product-card reveal"><span>05</span><h3>Suporte de corrimão</h3><p>Peças para serralherias e obras, com opção para pedidos em volume.</p><button type="button" data-quote-product="Suporte de corrimão">Solicitar cotação →</button></article>
         </div>
       </div>
     </section>
@@ -201,7 +201,7 @@
           <p>Conte o que você precisa e solicite um orçamento. Nossa equipe ajuda você a encontrar a melhor solução.</p>
         </div>
         <div class="cta-actions">
-          <a class="btn primary large" href="https://www.facebook.com/share/1Jdmt4APBt/" target="_blank" rel="noopener">Falar com a Torres</a>
+          <button class="btn primary large" type="button" data-quote-product="">Montar orçamento rápido</button>
           <small>Atendimento em Curitiba e região</small>
         </div>
       </div>
@@ -293,6 +293,25 @@
     <a href="https://wa.me/5541995414120" target="_blank" rel="noopener">FALAR NO WHATSAPP</a>
   </div>
 </footer>
+  <dialog class="quote-dialog" id="quoteDialog" aria-labelledby="quoteTitle">
+    <div class="quote-dialog-head">
+      <div><span class="quote-kicker">TORRES FERRO E AÇO</span><h2 id="quoteTitle">Orçamento rápido</h2><p>Conte o que precisa. Sua mensagem será preparada para o WhatsApp.</p></div>
+      <button class="quote-close" type="button" aria-label="Fechar orçamento" data-quote-close>×</button>
+    </div>
+    <form id="quoteForm" class="quote-form">
+      <label>Material ou serviço <select name="product" id="quoteProduct" required>
+        <option value="">Selecione uma opção</option>
+        <option>Telhas e coberturas</option><option>Tubos e barras</option><option>Cantoneiras e vigas</option><option>Chapas e perfis</option><option>Suporte de corrimão</option><option>Corte e dobra</option><option>Chapa cartola</option><option>Outro material ou serviço</option>
+      </select></label>
+      <div class="quote-fields">
+        <label>Medidas <input name="measurements" type="text" maxlength="100" placeholder="Ex.: 3 m x 1 m, espessura 2 mm"></label>
+        <label>Quantidade <input name="quantity" type="text" maxlength="80" placeholder="Ex.: 10 peças ou 20 metros" required></label>
+      </div>
+      <label>Bairro ou cidade <input name="location" type="text" maxlength="100" placeholder="Ex.: Sítio Cercado, Curitiba"></label>
+      <button class="quote-submit" type="submit">Continuar no WhatsApp <span aria-hidden="true">↗</span></button>
+      <p class="quote-hint">Você poderá conferir a mensagem antes de enviar.</p>
+    </form>
+  </dialog>
   <script src="/script.js"></script>
 
   <a class="whatsapp-float" href="https://wa.me/5541995414120" target="_blank" rel="noopener" aria-label="Falar com a Torres pelo WhatsApp">
