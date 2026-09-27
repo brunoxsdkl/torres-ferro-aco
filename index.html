@@ -36,8 +36,7 @@
       <nav class="navlinks">
         <a href="#empresa">Empresa</a>
         <a href="#produtos">Produtos</a>
-        <a href="#campanhas">Destaques</a>
-        <a href="#servicos">Serviços</a>
+        <a href="#solucoes">Soluções</a>
         <a href="#diferenciais">Diferenciais</a>
         <a class="nav-cta" href="#contato">Solicitar orçamento</a>
       </nav>
@@ -124,33 +123,30 @@
 
     
 
-<section class="campaigns section" id="campanhas">
+<section class="section solutions" id="solucoes">
   <div class="container">
-    <div class="campaigns-head reveal">
+    <div class="solutions-heading reveal">
       <div>
-        <span class="eyebrow dark">DESTAQUES TORRES</span>
-        <h2>Conheça nossas <mark>soluções em destaque.</mark></h2>
+        <span class="eyebrow dark">SOLUÇÕES TORRES</span>
+        <h2>Do material à <mark>solução pronta.</mark></h2>
       </div>
-      <div class="campaigns-copy">
-        <p>Produtos, serviços, condições comerciais e atendimento para quem constrói, fabrica e transforma.</p>
-        <div class="campaign-nav" aria-label="Navegação das campanhas">
-          <button class="campaign-arrow prev" type="button" aria-label="Anterior">←</button>
-          <button class="campaign-arrow next" type="button" aria-label="Próxima">→</button>
-        </div>
-      </div>
+      <p>Produtos e serviços para quem constrói, fabrica e transforma. Encontre o que seu projeto precisa com o apoio da Torres.</p>
     </div>
-    <div class="campaign-track" id="campaignTrack">
-      <button class="campaign-card reveal" type="button" data-campaign="https://torres-ferro-assets.vercel.app/01_corte_dobra.webp"><img src="https://torres-ferro-assets.vercel.app/01_corte_dobra.webp" alt="Corte e dobra de precisão Torres" loading="lazy"><span>Corte e dobra</span></button>
-      <button class="campaign-card reveal" type="button" data-campaign="https://torres-ferro-assets.vercel.app/04_telhas.webp"><img src="https://torres-ferro-assets.vercel.app/04_telhas.webp" alt="Telhas e coberturas Torres" loading="lazy"><span>Telhas e coberturas</span></button>
-      <button class="campaign-card reveal" type="button" data-campaign="https://torres-ferro-assets.vercel.app/05_chapa_cartola.webp"><img src="https://torres-ferro-assets.vercel.app/05_chapa_cartola.webp" alt="Chapa cartola sob medida Torres" loading="lazy"><span>Chapa cartola</span></button>
-      <button class="campaign-card reveal" type="button" data-campaign="https://torres-ferro-assets.vercel.app/10_corrimao.webp"><img src="https://torres-ferro-assets.vercel.app/10_corrimao.webp" alt="Suporte de corrimão Torres" loading="lazy"><span>Suporte de corrimão</span></button>
-      <button class="campaign-card reveal" type="button" data-campaign="https://torres-ferro-assets.vercel.app/03_produtos.webp"><img src="https://torres-ferro-assets.vercel.app/03_produtos.webp" alt="Tudo o que sua obra precisa Torres" loading="lazy"><span>Linha de produtos</span></button>
-      <button class="campaign-card reveal" type="button" data-campaign="https://torres-ferro-assets.vercel.app/07_serralherias.webp"><img src="https://torres-ferro-assets.vercel.app/07_serralherias.webp" alt="Ideal para serralherias e obras Torres" loading="lazy"><span>Serralherias e obras</span></button>
-      <button class="campaign-card reveal" type="button" data-campaign="https://torres-ferro-assets.vercel.app/08_condicoes.webp"><img src="https://torres-ferro-assets.vercel.app/08_condicoes.webp" alt="Condições especiais Torres" loading="lazy"><span>Condições especiais</span></button>
-      <button class="campaign-card reveal" type="button" data-campaign="https://torres-ferro-assets.vercel.app/02_atendimento.webp"><img src="https://torres-ferro-assets.vercel.app/02_atendimento.webp" alt="Atendimento rápido e eficiente Torres" loading="lazy"><span>Atendimento e entrega</span></button>
-      <button class="campaign-card reveal" type="button" data-campaign="https://torres-ferro-assets.vercel.app/06_institucional.webp"><img src="https://torres-ferro-assets.vercel.app/06_institucional.webp" alt="Tudo em ferro e aço para sua obra Torres" loading="lazy"><span>Ferro e aço</span></button>
-      <button class="campaign-card reveal" type="button" data-campaign="https://torres-ferro-assets.vercel.app/09_projeto.webp"><img src="https://torres-ferro-assets.vercel.app/09_projeto.webp" alt="Seu projeto sai do papel com a Torres" loading="lazy"><span>Seu projeto</span></button>
+    <div class="solutions-grid">
+      <article class="solution-card reveal">
+        <img src="assets/solution-telhas.webp" alt="Telhas de aço empilhadas" loading="lazy">
+        <div><span>01 / FABRICAÇÃO</span><h3>Telhas e coberturas</h3><p>Telhas de aço feitas para sua cobertura, com resistência e bom acabamento.</p></div>
+      </article>
+      <article class="solution-card reveal">
+        <img src="assets/solution-corte-dobra.webp" alt="Máquina dobrando uma peça de aço" loading="lazy">
+        <div><span>02 / SERVIÇO</span><h3>Corte e dobra</h3><p>Peças preparadas nas medidas do seu projeto, com precisão e agilidade.</p></div>
+      </article>
+      <article class="solution-card reveal">
+        <img src="assets/solution-chapa-cartola.webp" alt="Perfis metálicos chapa cartola" loading="lazy">
+        <div><span>03 / SOB MEDIDA</span><h3>Chapa cartola</h3><p>Perfis sob medida, prontos para facilitar a instalação na sua obra.</p></div>
+      </article>
     </div>
+    <div class="solutions-action reveal"><span>Tem um projeto em mente?</span><a href="#contato">Solicitar orçamento <span aria-hidden="true">→</span></a></div>
   </div>
 </section>
 
@@ -169,11 +165,6 @@
   </div>
 </section>
 
-<div class="campaign-modal" id="campaignModal" aria-hidden="true">
-  <button class="campaign-modal-close" type="button" aria-label="Fechar">×</button>
-  <div class="campaign-modal-inner"><img id="campaignModalImage" alt="Campanha Torres Ferro e Aço"></div>
-</div>
-
 <section class="section products" id="produtos">
       <div class="container">
         <div class="section-heading reveal">
@@ -186,39 +177,7 @@
           <article class="product-card reveal"><span>02</span><h3>Tubos e barras</h3><p>Opções para estruturas, serralheria, fabricação e uso geral.</p><a href="#contato">Solicitar cotação →</a></article>
           <article class="product-card reveal"><span>03</span><h3>Cantoneiras e vigas</h3><p>Perfis para projetos estruturais, reforços e soluções profissionais.</p><a href="#contato">Solicitar cotação →</a></article>
           <article class="product-card reveal"><span>04</span><h3>Chapas e perfis</h3><p>Materiais versáteis para fabricação, acabamento e projetos personalizados.</p><a href="#contato">Solicitar cotação →</a></article>
-        </div>
-      </div>
-    </section>
-
-    <section class="feature-banner">
-      <div class="feature-media"><img src="https://torres-ferro-assets.vercel.app/04_telhas.webp" alt="Telhas e coberturas Torres" /></div>
-      <div class="feature-copy reveal">
-        <span class="eyebrow">DESTAQUE</span>
-        <h2>Telhas e coberturas com qualidade para durar.</h2>
-        <p>Escolha materiais com bom acabamento e resistência para proteger sua obra e valorizar o projeto.</p>
-        <a class="btn primary" href="#contato">Quero um orçamento</a>
-      </div>
-    </section>
-
-    <section class="section services" id="servicos">
-      <div class="container">
-        <div class="section-heading reveal">
-          <span class="eyebrow dark">SERVIÇOS SOB MEDIDA</span>
-          <h2>Não é só material.<br><mark>É solução pronta.</mark></h2>
-        </div>
-        <div class="service-grid">
-          <article class="service-card reveal">
-            <img src="https://torres-ferro-assets.vercel.app/01_corte_dobra.webp" alt="Corte e dobra de precisão" />
-            <div><small>SERVIÇO 01</small><h3>Corte e dobra de precisão</h3><p>Soluções sob medida com precisão e acabamento profissional.</p></div>
-          </article>
-          <article class="service-card reveal">
-            <img src="https://torres-ferro-assets.vercel.app/05_chapa_cartola.webp" alt="Chapa cartola sob medida" />
-            <div><small>SERVIÇO 02</small><h3>Chapa cartola sob medida</h3><p>Você informa as medidas e recebe o perfil pronto para instalação.</p></div>
-          </article>
-          <article class="service-card reveal">
-            <img src="https://torres-ferro-assets.vercel.app/10_corrimao.webp" alt="Suporte de corrimão" />
-            <div><small>PRODUTO 03</small><h3>Suporte de corrimão</h3><p>Ideal para serralherias e obras, com opção para pedidos em volume.</p></div>
-          </article>
+          <article class="product-card reveal"><span>05</span><h3>Suporte de corrimão</h3><p>Peças para serralherias e obras, com opção para pedidos em volume.</p><a href="#contato">Solicitar cotação →</a></article>
         </div>
       </div>
     </section>
@@ -302,7 +261,7 @@
       <a href="#inicio">Início</a>
       <a href="#empresa">Empresa</a>
       <a href="#produtos">Produtos</a>
-      <a href="#campanhas">Destaques</a>
+      <a href="#solucoes">Soluções</a>
       <a href="#contato">Contato</a>
     </div>
 
@@ -310,9 +269,9 @@
       <h3>Produtos e serviços</h3>
       <a href="#produtos">Telhas e coberturas</a>
       <a href="#produtos">Tubos, barras e perfis</a>
-      <a href="#servicos">Corte e dobra</a>
-      <a href="#servicos">Chapa cartola</a>
-      <a href="#servicos">Suporte de corrimão</a>
+      <a href="#solucoes">Corte e dobra</a>
+      <a href="#solucoes">Chapa cartola</a>
+      <a href="#produtos">Suporte de corrimão</a>
     </div>
 
     <div class="footer-location">
