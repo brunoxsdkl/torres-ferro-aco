@@ -1619,6 +1619,7 @@ footer{background:#0c0e0c;color:#d9ddd9;padding:60px 0 25px}.footer-grid{display
 }
 
 /* Galeria de materiais na seção Quem Somos. */
+.company{scroll-margin-top:110px}
 .company .split{gap:48px}
 .company .section-copy{min-height:0}
 .company-materials{
