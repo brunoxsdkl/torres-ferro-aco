@@ -833,8 +833,8 @@ footer{background:#0c0e0c;color:#d9ddd9;padding:60px 0 25px}.footer-grid{display
   bottom:8px;
   z-index:120;
   display:block;
-  width:116px;
-  height:174px;
+  width:128px;
+  height:192px;
   transition:transform .25s ease;
 }
 .whatsapp-float img{
@@ -852,8 +852,8 @@ footer{background:#0c0e0c;color:#d9ddd9;padding:60px 0 25px}.footer-grid{display
   .whatsapp-float{
     right:6px;
     bottom:8px;
-    width:84px;
-    height:126px;
+    width:92px;
+    height:138px;
   }
 }
 
