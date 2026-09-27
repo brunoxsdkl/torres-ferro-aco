@@ -1597,12 +1597,23 @@ footer{background:#0c0e0c;color:#d9ddd9;padding:60px 0 25px}.footer-grid{display
   }
 
   .hero.hero-industrial .hero-inner{
-    height:max(500px,42.85vw) !important;
+    height:calc(100vw * 821 / 1916) !important;
   }
 
   .hero.hero-industrial .ticker{
     position:relative !important;
     bottom:auto !important;
-    margin-top:22px !important;
+    margin-top:0 !important;
+  }
+}
+
+/* O mascote ocupa a área escura ao lado do cadastro, sem cortar a arte. */
+@media(min-width:981px){
+  .newsletter-wrap,
+  .newsletter-mascot{min-height:560px}
+  .newsletter-mascot img{
+    height:100% !important;
+    max-height:100% !important;
+    right:0 !important;
   }
 }
