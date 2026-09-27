@@ -1617,3 +1617,75 @@ footer{background:#0c0e0c;color:#d9ddd9;padding:60px 0 25px}.footer-grid{display
     right:0 !important;
   }
 }
+
+/* Galeria de materiais na seção Quem Somos. */
+.company .split{gap:48px}
+.company .section-copy{min-height:0}
+.company-materials{
+  width:100%;
+  max-width:480px;
+  margin-inline:auto;
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:14px;
+}
+.company-material{
+  position:relative;
+  display:block;
+  aspect-ratio:1;
+  overflow:hidden;
+  isolation:isolate;
+  border-radius:16px;
+  background:#111;
+  box-shadow:0 14px 32px rgba(0,0,0,.12);
+  transition:opacity .65s ease,transform .65s ease,box-shadow .3s ease;
+}
+.company-material::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(180deg,rgba(0,0,0,.22),transparent 38%,rgba(0,0,0,.9));
+  pointer-events:none;
+}
+.company-material img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+  transition:transform .5s ease;
+}
+.company-material:hover{box-shadow:0 20px 40px rgba(0,0,0,.2)}
+.company-material:hover img{transform:scale(1.06)}
+.company-material .material-number,
+.company-material>div{position:absolute;z-index:1;color:#fff}
+.company-material .material-number{
+  top:14px;
+  left:14px;
+  font:800 12px/1 Inter,sans-serif;
+  color:#121212;
+  background:var(--y);
+  padding:8px 9px;
+  border-radius:6px;
+}
+.company-material>div{left:16px;right:12px;bottom:14px}
+.company-material h3{font:800 clamp(24px,2.4vw,31px)/1 Barlow Condensed,sans-serif;margin:0 0 5px;text-transform:uppercase}
+.company-material p{font:500 11px/1.3 Inter,sans-serif;margin:0;color:#f1f1ed}
+.company-material:nth-child(2){transition-delay:.08s}
+.company-material:nth-child(3){transition-delay:.16s}
+.company-material:nth-child(4){transition-delay:.24s}
+.company-material:nth-child(5){transition-delay:.32s}
+.company-material:nth-child(6){transition-delay:.4s}
+@media(max-width:900px){
+  .company-materials{max-width:560px}
+}
+@media(max-width:560px){
+  .company-materials{gap:10px}
+  .company-material{border-radius:12px}
+  .company-material>div{left:12px;right:9px;bottom:11px}
+  .company-material h3{font-size:23px}
+  .company-material p{font-size:9px}
+  .company-material .material-number{top:10px;left:10px;font-size:10px;padding:6px}
+}
+@media(prefers-reduced-motion:reduce){
+  .company-material,.company-material img{transition:none !important}
+}
