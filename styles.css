@@ -1590,4 +1590,19 @@ footer{background:#0c0e0c;color:#d9ddd9;padding:60px 0 25px}.footer-grid{display
   }
 }
 
+@media(min-width:901px){
+  .hero.hero-industrial .hero-copy,
+  .hero.hero-industrial .hero-actions{
+    display:none !important;
+  }
+
+  .hero.hero-industrial .hero-inner{
+    height:max(500px,42.85vw) !important;
+  }
+
+  .hero.hero-industrial .ticker{
+    position:relative !important;
+    bottom:auto !important;
+    margin-top:22px !important;
+  }
 }
